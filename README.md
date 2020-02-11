@@ -50,29 +50,29 @@ class StateMachine(object):
         print("fixture_disengag")
 
 
-# if __name__ == '__main__':
-#
-#     statemachine = StateMachine()
-#     print(statemachine.state)
-#
-#     statemachine.dut_ready()
-#     print(statemachine.state)
-#
-#     if statemachine.state == 'READY_TO_LOAD':
-#
-#         statemachine.start()
-#         print(statemachine.state)
-#
-#         # statemachine.UOP()
-#         # print(statemachine.state)
-#
-#         statemachine.finish()
-#         print(statemachine.state)
-#
-#         statemachine.will_unload()
-#         print(statemachine.state)
-#
-#         statemachine.dut_removed()
-#         print(statemachine.state)
-#         print(statemachine.fixture)  # Indicates that the fixture_close function is called
+ if __name__ == '__main__':
+
+     statemachine = StateMachine()
+     print(statemachine.state)
+
+     statemachine.dut_ready()
+     print(statemachine.state)
+
+     if statemachine.state == 'READY_TO_LOAD':
+
+         statemachine.start()
+         print(statemachine.state)
+
+         # statemachine.UOP()
+         # print(statemachine.state)
+
+         statemachine.finish()
+         print(statemachine.state)
+
+         statemachine.will_unload()
+         print(statemachine.state)
+
+         statemachine.dut_removed()
+         print(statemachine.state)
+         print(statemachine.fixture)  # Indicates that the fixture_close function is called
 
